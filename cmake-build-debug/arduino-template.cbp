@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="arduino-template"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\toolchain\;CMake Files\..\..\toolchain\compilers\;CMake Files\..\..\toolchain\targets\;CMake Files\..\..\toolchain\targets\arm32\;CMake Files\..\..\toolchain\targets\arm32\cm3\;CMake Files\..\..\toolchain\targets\arm32\cm3\atmel\;CMake Files\..\..\toolchain\targets\arm32\cm3\atmel\sam3x\;CMake Files\..\..\toolchain\targets\arm32\cm3\atmel\sam3x\sam3x8e\;CMake Files\..\..\toolchain\targets\arm32\cm3\atmel\sam3x\sam3x8e\flashscripts\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino-template.hex">
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino-template.hex"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino-template.elf">
+				<Option output="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/arduino-template.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBMPTK_TARGET_arduino_due"/>
+					<Add option="-DBMPTK_TARGET=arduino_due"/>
+					<Add option="-DBMPTK_BAUDRATE=19200"/>
+					<Add option="-D__SAM3X8E__"/>
+					<Add option="-DDONT_USE_CMSIS_INIT"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../libraries/hwlib/library"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../libraries/Catch2/single_include"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/targets/arm32/cm3/deps"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/targets/arm32/cm3/atmel/sam3x/deps"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino-template.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino-template.elf/fast">
+				<Option output="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/arduino-template.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBMPTK_TARGET_arduino_due"/>
+					<Add option="-DBMPTK_TARGET=arduino_due"/>
+					<Add option="-DBMPTK_BAUDRATE=19200"/>
+					<Add option="-D__SAM3X8E__"/>
+					<Add option="-DDONT_USE_CMSIS_INIT"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../libraries/hwlib/library"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../libraries/Catch2/single_include"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/targets/arm32/cm3/deps"/>
+					<Add directory="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/targets/arm32/cm3/atmel/sam3x/deps"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include/c++/6.3.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include/c++/6.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino-template.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flash">
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 flash"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arduino-template.bin">
+				<Option working_dir="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 arduino-template.bin"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/implementations/playstation2/ps2_bus.hpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/interfaces/device_interface.hpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/interfaces/input_device.hpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/libc-stub.cpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/main.cpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.cpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/toolchain/targets/arm32/cm3/atmel/sam3x/sam3x8e/deps/startup_sam3xa.c">
+			<Option target="arduino-template.elf"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/BuildModule.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/Sources.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../flags.cmake">
+			<Option virtualFolder="CMake Files\..\..\"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/compilers/arm-none-eabi.cmake">
+			<Option virtualFolder="CMake Files\..\..\toolchain\compilers\"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/targets/arm32/cm3/atmel/sam3x/sam3x8e/sam3x8e.cmake">
+			<Option virtualFolder="CMake Files\..\..\toolchain\targets\arm32\cm3\atmel\sam3x\sam3x8e\"/>
+		</Unit>
+		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/../../toolchain/targets/arm32/cm3/atmel/sam3x/sam3x8e/flashscripts/arduino_due.cmake">
+			<Option virtualFolder="CMake Files\..\..\toolchain\targets\arm32\cm3\atmel\sam3x\sam3x8e\flashscripts\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

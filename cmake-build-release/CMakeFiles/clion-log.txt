@@ -1,0 +1,4 @@
+/home/sebastiaan/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.5281.26/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-release

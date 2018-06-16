@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../libraries/hwlib/library/hwlib.hpp
+
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/libc-stub.cpp
+
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/main.cpp
+wrap-hwlib.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
+
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.cpp
+wrap-hwlib.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
+
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
+hwlib.hpp
+-
+
