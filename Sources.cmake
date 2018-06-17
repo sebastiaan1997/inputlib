@@ -17,8 +17,8 @@ include_directories (${catch}/single_include)
 
 set (sources
     src/main.cpp
-        src/inputlib/wrap-hwlib.hpp
-        src/inputlib/device_interface.hpp
-        src/inputlib/input_device.hpp
-        src/inputlib/playstation2_controller.hpp
+     #   src/inputlib/wrap-hwlib.hpp
+      #  src/inputlib/device_interface.hpp
+       # src/inputlib/input_device.hpp
+        #src/inputlib/playstation2_controller.hpp
 )

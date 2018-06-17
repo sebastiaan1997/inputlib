@@ -94,6 +94,7 @@ CMakeFiles/arduino-template.elf.dir/src/libc-stub.cpp.obj
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj
  ../../../libraries/hwlib/library/hwlib.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/main.cpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/pin_log_decorator.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
 CMakeFiles/arduino-template.elf.dir/src/wrap-hwlib.cpp.obj
  ../../../libraries/hwlib/library/hwlib.hpp

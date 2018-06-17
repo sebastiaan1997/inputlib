@@ -9,19 +9,18 @@ namespace inputlib {
         Ps2Bus(hwlib::pin_out& sclk, hwlib::pin_in& miso, hwlib::pin_out& mosi, hwlib::pin_in& acknolage):
         _sclk(sclk), _miso(miso), _mosi(mosi), _acknolage(acknolage) {}
 
-        Ps2Bus()
-
-
         virtual void write_and_read(hwlib::pin_out & sel, const size_t n, const uint8_t data_out[], uint8_t data_in[] ) override {
-            for(unsigned int i = 0; i < size_t; i++) {
-                this->data_in[i] = this->transfer_byte(data_out[i]);
+            sel.set(true);
+            for(unsigned int i = 0; i < n; i++) {
+                data_in[i] = this->transfer_byte(data_out[i]);
             }
+            sel.set(false);
         }
 
         protected:
 
         /**
-         * @brief Sends pulse to slave
+         * @brief Executes a tick. Transfers one bit in each direction
          * 
          * @param data_out The bit to send to the slave
          * @return true Value 1
@@ -40,8 +39,12 @@ namespace inputlib {
             this->_sclk.set(0);
             return this->_miso.get();   
         }
-
-
+        /**
+         * @brief Transfers one byte in each direction with the slave device
+         * 
+         * @param command 
+         * @return uint8_t 
+         */
         uint8_t transfer_byte(uint8_t command) {
             uint8_t output = 0;
             for(uint_fast8_t i = 0; i < 8; i++) {

@@ -13,6 +13,14 @@
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/main.cpp
 wrap-hwlib.hpp
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
+pin_log_decorator.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/pin_log_decorator.hpp
+
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/pin_log_decorator.hpp
+wrap-hwlib.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
+array
+-
 
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.cpp
 wrap-hwlib.hpp
