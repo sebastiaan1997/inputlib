@@ -93,6 +93,8 @@ CMakeFiles/arduino-template.elf.dir/src/libc-stub.cpp.obj
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/libc-stub.cpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj
  ../../../libraries/hwlib/library/hwlib.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/inputlib.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/ps2_bus.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/main.cpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/pin_log_decorator.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp

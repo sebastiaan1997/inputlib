@@ -92,6 +92,8 @@ CMakeFiles/arduino-template.elf.dir/home/sebastiaan/projects/bmptkpp/Build-envir
 CMakeFiles/arduino-template.elf.dir/src/libc-stub.cpp.obj: ../src/libc-stub.cpp
 
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../../../libraries/hwlib/library/hwlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/inputlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/ps2_bus.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/pin_log_decorator.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/wrap-hwlib.hpp

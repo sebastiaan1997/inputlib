@@ -8,7 +8,10 @@
 #include "../../../../libraries/hwlib/library/hwlib-spi.hpp"
 
 namespace inputlib {
-    class IDeviceInterface : hwlib::spi_bus {
+    class IDeviceInterface : hwlib::port_in {
+
+
+
 
 
     };
