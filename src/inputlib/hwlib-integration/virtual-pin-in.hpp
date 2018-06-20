@@ -6,9 +6,19 @@
 #include <cstdint> 
 
 namespace inputlib {
+    /**
+     * @brief Virtual pin for use inside hwlib applications
+     * 
+     */
     class VirtualPinIn: public hwlib::pin_in {
         
     public:
+        /**
+         * @brief Construct a new Virtual Pin In object
+         * 
+         * @param i The location of the bit in the byte
+         * @param port The source port for the pin
+         */
         VirtualPinIn(unsigned int i , hwlib::port_in& port):
             _lastValue(false), _mask(0x01 << i), _port(port) {}
 

@@ -7,10 +7,31 @@
 
 namespace inputlib {
     
-    template<typename BUS_TYPE, typename COMMAND_ADAPTER, typename EVENT_HANDLER = nullptr>
-    class InputDevice {
+    template<typename BUS_TYPE, typename DEVICE_POLICY, typename EVENT_HANDLER = nullptr>
+    class InputDevice: protected DEVICE_POLICY {
         public:
         InputDevice(BUT_TYPE bus);
+
+
+        T getAll() const noexcept {
+            bus.read_write_bytes();
+        }
+
+        template<>
+        T getValue() const noexcept {
+            
+        }
+
+        
+
+
+        
+
+
+
+
+        
+
         
         
 
