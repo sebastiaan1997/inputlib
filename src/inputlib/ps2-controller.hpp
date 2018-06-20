@@ -8,6 +8,7 @@ namespace hwlib {
     class PS2Controller: public PS2Controller {
     public:
         
+        
 
     private:
 
