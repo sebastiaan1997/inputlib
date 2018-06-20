@@ -14,7 +14,6 @@ public:
         }
         this->_slave.set(value, buff);
     }
-
     void enable_log(bool value) {
         this->_logEnabled = value;
     }

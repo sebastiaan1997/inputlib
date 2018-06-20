@@ -23,8 +23,7 @@ int main() {
         hwlib::target::pin_out(duepin::d6),
         hwlib::target::pin_in(duepin::d7)
     };
-
-    
+        
     std::array<uint8_t, 5> data = {
         0x00,
         0x00,
