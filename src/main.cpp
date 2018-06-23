@@ -1,6 +1,8 @@
-#include "wrap-hwlib.hpp"
 
-#include "pin_log_decorator.hpp"
+#include "wrap-hwlib.hpp"
+#include "game-lib/game-lib.hpp"
+#include <array>
+
 struct pinset {
     hwlib::target::pin_in data;
     hwlib::target::pin_out command;
@@ -11,60 +13,54 @@ struct pinset {
 
 typedef hwlib::target::pins duepin ;
 
+
+
 int main() {
-// Wait for the serial connection to connect
-    hwlib::wait_ms(500);
-    hwlib::target::pin_adc analog_data(hwlib::target::ad_pins::a0);
-    pinset p = {
-        hwlib::target::pin_in(duepin::d13),
-        hwlib::target::pin_out(duepin::d4),
-        hwlib::target::pin_out(duepin::d5),
-        hwlib::target::pin_out(duepin::d6),
-        hwlib::target::pin_in(duepin::d7)
-    };
+// Wait for the serial connection to connection
+     namespace target = hwlib::target;
+      WDT->WDT_MR = WDT_MR_WDDIS;
+   
+    auto scl = target::pin_oc( target::pins::scl );
+    auto sda = target::pin_oc( target::pins::sda );
+    
+    auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda( scl,sda );
+   
+    auto display = hwlib::glcd_oled_buffered( i2c_bus, 0x3c );  
+    constexpr auto buff = hwlib::buffering::buffered;
+    
 
-    p.clock.set(0);
-    p.command.set(0);
-    p.attention.set(1);
-    p.data.pullup_enable();
-    p.acknoledge.pullup_enable();
+    hwlib::location o(25,25);
+    int radius = 5;
+    // hwlib::graphics_random_circles(display);
+    
+    display.clear();
+    auto circle1 =  gamelib::Circle({30, 0}, 15);
+    auto circle2 =  gamelib::Circle({0, 0}, 10);
 
-    hwlib::wait_ms(500);
-    std::array<uint_fast8_t, 5> commands = {
-        0x01,
-        0x42,
-        0x00,
-        0x00,
-        0x00
+    std::array<gamelib::Drawable*, 2> drawables = {
+        &circle1,
+        &circle2
     };
-    while(true) {
-        hwlib::cout << "=== start transaction ===" << hwlib::endl << hwlib::flush;
-        for(auto command: commands) {
-            p.attention.set(0);
-            uint_fast8_t data = 0x00;
-            uint_fast32_t analog_value;
-            hwlib::cout << "==== Packet ====" << hwlib::endl;
-            for(unsigned int i = 0; i < 8; i++) {
-                bool value = command & 0x01;
-                command <<= 1;
-                hwlib::wait_ms(1);
-                p.command.set(value);
-                hwlib::wait_ms(2);
-                p.clock.set(1);
-                hwlib::wait_ms(10);
-                bool output = p.data.get();
-                analog_value = analog_data.get();
-                p.clock.set(0);
-                data <<= 1;
-                data |= output;
-                hwlib::cout << output;
-            };
-            
-            hwlib::cout << hwlib::endl << "Dec => " << data << hwlib::endl;
-            hwlib::cout << "Analog => " << analog_value << hwlib::endl;
+    
+    for(unsigned int i = 0; i < 128 - 30; i++) {
+        display.clear();
+        for(auto d: drawables) {
+            auto pos = d->getPosition();
+            d->setPosition({pos[0] + 1, pos[1]});
+            d->draw(display);
         }
-        hwlib::cout << "=== end transaction ===" << hwlib::endl << hwlib::flush;
+        display.flush();
     }
+    
+    display.flush();
+    while(true){
+        hwlib::wait_ms(1000);
+    }
+
+
 
     return 0;
 }
+
+
+

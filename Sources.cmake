@@ -13,11 +13,18 @@ include_directories (${catch}/single_include)
 # file(GLOB_RECURSE sources src/**/*.hpp src/**/*.cpp src/**/*.h)
 
 
+set (gamelib_sources
+        "src/gamelib/display.hpp")
+
 
 
 set (sources
     src/main.cpp
-     #   src/inputlib/wrap-hwlib.hpp
+
+
+
+
+     #src/inputlib/wrap-hwlib.hpp
       #  src/inputlib/device_interface.hpp
        # src/inputlib/input_device.hpp
         #src/inputlib/playstation2_controller.hpp
