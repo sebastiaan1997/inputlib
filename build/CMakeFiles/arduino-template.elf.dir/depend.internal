@@ -93,8 +93,14 @@ CMakeFiles/arduino-template.elf.dir/src/libc-stub.cpp.obj
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/libc-stub.cpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj
  ../../../libraries/hwlib/library/hwlib.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/color.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/drawable.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/game-lib.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/shapes/circle.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/shapes/line.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/vector.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/wrap-hwlib.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/main.cpp
- /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/pin_log_decorator.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/wrap-hwlib.hpp
 CMakeFiles/arduino-template.elf.dir/src/wrap-hwlib.cpp.obj
  ../../../libraries/hwlib/library/hwlib.hpp

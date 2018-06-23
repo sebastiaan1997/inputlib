@@ -92,8 +92,14 @@ CMakeFiles/arduino-template.elf.dir/home/sebastiaan/projects/bmptkpp/Build-envir
 CMakeFiles/arduino-template.elf.dir/src/libc-stub.cpp.obj: ../src/libc-stub.cpp
 
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../../../libraries/hwlib/library/hwlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/color.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/drawable.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/game-lib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/shapes/circle.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/shapes/line.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/vector.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/wrap-hwlib.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/main.cpp
-CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/pin_log_decorator.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/wrap-hwlib.hpp
 
 CMakeFiles/arduino-template.elf.dir/src/wrap-hwlib.cpp.obj: ../../../libraries/hwlib/library/hwlib.hpp
