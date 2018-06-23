@@ -1,9 +1,16 @@
 #ifndef GAMELIB_VECTOR_HPP
 #define GAMELIB_VECTOR_HPP
 #include <array>
+#include "../wrap-hwlib.hpp"
 
 namespace gamelib {
-    template<typename T, unsigned int SIZE, bool = false>
+    /**
+     * @brief Vector that can be used for mathematical operations
+     * 
+     * @tparam T The inner type of the vector
+     * @tparam SIZE The size of the vector
+     */
+    template<typename T, unsigned int SIZE>
     class Vector {
         public:
         Vector(): _items(std::array<T, SIZE>()) {
@@ -32,7 +39,7 @@ namespace gamelib {
         template<typename RHS_T>
         Vector<T, SIZE> operator + (const Vector<RHS_T, SIZE>& rhs) const noexcept {   
 
-            static_assert(std::is_arithmetic<T>::value, "The right hand side of the + operation of a vector must be arithmetic");
+            static_assert(std::is_arithmetic<T>::value, "The right hand side of a + operation of a vector must be arithmetic");
             std::array<T, SIZE> output;
             for(unsigned int i = 0; i < SIZE; i++) {
                 output[i] = this->_items[i] + rhs[i];
@@ -66,29 +73,33 @@ namespace gamelib {
                 }
             }
         }
-        /**
-         * @brief 
-         * 
-         * @param rhs 
-         */
-        void operator += (const Vector<T, SIZE>& rhs) noexcept {
+        
+        template<typename RHS_T>
+        void operator += (const Vector<RHS_T, SIZE>& rhs) noexcept {
+            static_assert(std::is_arithmetic<RHS_T>::value, "The right hand side of a += operation of a vector must be arithmetic");
             for(unsigned int i = 0; i < SIZE; i++) {
                 this->_items[i] += rhs[i];
             }
         }
-        void operator -= (const Vector<T, SIZE>& rhs) noexcept {
+        template<typename RHS_T>
+        void operator -= (const Vector<RHS_T, SIZE>& rhs) noexcept {
+            static_assert(std::is_arithmetic<RHS_T>::value, "The right hand side of a -= operation of a vector must be arithmetic");
             for(unsigned int i = 0; i < SIZE; i++) {
                 this->_items[i] = rhs[i];
             }
         }
 
-        void operator *= (const Vector<T, SIZE>& rhs) noexcept {
+        template<typename RHS_T>
+        void operator *= (const Vector<RHS_T, SIZE>& rhs) noexcept {
+            static_assert(std::is_arithmetic<RHS_T>::value, "The right hand side of a *= operation of a vector must be arithmetic");
             for(unsigned i = 0; i < SIZE; i++) {
                 this->_items[i] *= rhs[i];
             }
         }
-
-        void operator /= (const Vector<T, SIZE> rhs) noexcept {
+        
+        template<typename RHS_T>
+        void operator /= (const Vector<RHS_T, SIZE> rhs) noexcept {
+            static_assert(std::is_arithmetic<RHS_T>::value, "The right hand side of a /= operation of a vector must be arithmetic");
             for(unsigned int i = 0; i < SIZE; i++) {
                 if(rhs[i] == 0){
                     this->_items[i] = 0;
@@ -128,10 +139,40 @@ namespace gamelib {
         T get(unsigned int index) {
             return this->_items[index];
         }
+        /**
+         * @brief Print vector to ostream provided by hwlib
+         * 
+         * @param lhs The ostream to print to
+         * @param rhs The Vector to print
+         * @return hwlib::ostream&
+         */
+        friend hwlib::ostream& operator << (hwlib::ostream& lhs, const Vector<T, SIZE>& rhs) {
+            lhs<< '{';
+            for(unsigned int i = 0; i < rhs._items.size(); i++) {
+                if (sizeof(decltype(rhs[0])) == 1 && !std::is_same<T, char>::value){
+                    lhs << int(rhs._items[i]);
+                }
+                else{
+                    lhs << rhs._items[i];
+                }
 
-        
+
+                if(i < (rhs._items.size() - 1)) {
+                    lhs << ',';
+                }
+
+            }
+            lhs << '}';
+
+            return lhs;
+
+        }
+
+        typedef T type;
         protected:
         std::array<T, SIZE> _items;
+
+
     };
 
     template<size_t SIZE>

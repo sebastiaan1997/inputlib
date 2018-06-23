@@ -8,6 +8,12 @@
 
 namespace gamelib {
     
+    /**
+     * @brief A circle object.
+     * @details A circle object that uses the Midpoint Circle Algorithm as described on Wikipedia
+     * @auhtor Wikipedia
+     * 
+     */
     class Circle: public Drawable {
         
 
@@ -19,7 +25,15 @@ namespace gamelib {
 
         
     protected:
+        /**
+         * @brief The implementation of drawing a circle
+         * @author Wikpedia
+         * 
+         * @param target The screen to draw to
+         */
         virtual void drawImplementation(hwlib::window& target) override {
+            // Credits to Wikipedia (22 june 2018)
+            // URL https://en.wikipedia.org/wiki/Midpoint_circle_algorithm
             auto radius = this->_radius;
             int x = radius-1;
             int y = 0;
@@ -54,8 +68,11 @@ namespace gamelib {
         }
     }
     private:
+        /**
+         * @brief The radius of the circle
+         * 
+         */
         unsigned int _radius;
-        Vector<unsigned int, 2> _location;
     };
 }
 #endif

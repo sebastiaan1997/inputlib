@@ -1,13 +1,13 @@
-#ifndef GAMELIB_EVENTS_EVENT_HPP
-#define GAMELIB_EVENTS_EVENT_HPP
+#ifndef GAMELIB_EVENTS_LISTENER_HPP
+#define GAMELIB_EVENTS_LISTENER_HPP
 #include "../game-object.hpp"
 
 namespace gamelib {
     template<typename E>
     class Listener {
     public:
-        Event(): _enabled(true) {}
-        Event(bool enabled): _enabled(enabled) {}
+        Listener(): _enabled(true) {}
+        Listener(bool enabled): _enabled(enabled) {}
 
         void operator()(E& obj) {
             return this->invoke(obj);

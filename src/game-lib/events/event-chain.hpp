@@ -1,6 +1,6 @@
 #ifndef EVENTS_EVENT_CHAIN_HPP
 #define EVENTS_EVENT_CHAIN_HPP
-#include "event.hpp"
+#include "listener.hpp"
 #include "../game-object.hpp"
 namespace gamelib {
     /**
@@ -9,27 +9,27 @@ namespace gamelib {
      * @tparam E Type of data to pass trough the events
      */
     template<typename E>
-    final class EventChain {
+    class EventChain final{
     public:
         /**
          * @brief Default constructor
          * 
          */
-        EventChain(): _next(nullptr), _event(nullptr) {}
+        EventChain(): _next(nullptr), _listener(nullptr) {}
         /**
          * @brief Constructs a new node of an event chain with no next node
          * 
          * @param event The event that will be executed when the constructed node will be invoked
          */
-        EventChain(Listener<E>& event): _next(nullptr), _event(&event) {}
+        EventChain(Listener<E>& event): _next(nullptr), _listener(&event) {}
         /**
          * @brief Constructs a new node of an event chain with next node
          * 
          * @param event 
          * @param next 
          */
-        EventChain(Listener<E>& event, EventChain<E>& next): _next(&next), _event(&event) {}
-        EventChain(Listener<E>* event, EventChain<E>* next = nullptr): _next(next), _event(event)  {}
+        EventChain(Listener<E>& event, EventChain<E>& next): _next(&next), _listener(&event) {}
+        EventChain(Listener<E>* event, EventChain<E>* next = nullptr): _next(next), _listener(event)  {}
         /**
          * @brief Returns the next node of the event chain
          * 
@@ -58,7 +58,9 @@ namespace gamelib {
         void invoke(E& target) {
             EventChain<E>* current = this;
             while(current != nullptr) {
-                current->_event->invoke(target);
+                if(current->_listener != nullptr){
+                    current->_listener->invoke(target);
+                }
                 current = current->_next;
             }
         }
@@ -71,12 +73,17 @@ namespace gamelib {
          * 
          * @param listener The listener to add to the event chain
          */
-        void operator += (Listener& listener) {
+        void operator += (Listener<E>& listener) {
+            return this->addListener(listener);
+        }
+
+        void addListener(Listener<E>& listener) {
             EventChain<E>* current = this;
             while(current->_next != nullptr) {
                 current = this->_next;
             }
-            current->_next = &EventChain<E>(listener);
+            auto a = EventChain<E>(listener);
+            current->_next = & a;
         }
 
     private:
@@ -84,12 +91,12 @@ namespace gamelib {
          * @brief Next node in the event chain, nullptr if absent
          * 
          */
-        EventChain< Listener<E> >* _next;
+        EventChain< E >* _next;
         /**
          * @brief Listener that is linked to the current event
          * 
          */
-        Listener<E>* _listener;
+        const Listener<E>* _listener;
 
     };
 }

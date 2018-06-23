@@ -19,7 +19,10 @@ set (gamelib_sources
 
 
 set (sources
-    src/main.cpp
+        src/main.cpp
+
+
+
 
 
 

@@ -128,18 +128,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/device_interface.hpp">
-			<Option target="arduino-template.elf"/>
-		</Unit>
-		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/input_device.hpp">
-			<Option target="arduino-template.elf"/>
-		</Unit>
-		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/playstation2_controller.hpp">
-			<Option target="arduino-template.elf"/>
-		</Unit>
-		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/wrap-hwlib.hpp">
-			<Option target="arduino-template.elf"/>
-		</Unit>
 		<Unit filename="/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/libc-stub.cpp">
 			<Option target="arduino-template.elf"/>
 		</Unit>
