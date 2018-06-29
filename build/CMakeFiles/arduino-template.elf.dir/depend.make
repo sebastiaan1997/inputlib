@@ -92,6 +92,8 @@ CMakeFiles/arduino-template.elf.dir/home/sebastiaan/projects/bmptkpp/Build-envir
 CMakeFiles/arduino-template.elf.dir/src/libc-stub.cpp.obj: ../src/libc-stub.cpp
 
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../../../libraries/hwlib/library/hwlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/candy.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/eat-listener.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/class-definitions.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/color.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/drawable.hpp
@@ -100,10 +102,20 @@ CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/events/lis
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/events/object-listener.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/game-lib.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/game-object.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/grid.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/hwlib/virtual-window.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/shapes/circle.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/shapes/line.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/vector.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/wrap-hwlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/hwlib-integration/virtual-pin-in.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/implementations/playstation/playstation-button-masks.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/implementations/playstation/playstation-byte-mapping.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/implementations/playstation/playstation-controller.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/inputlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/ps2_bus.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/ps2_testbus.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/wrap-hwlib.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/main.cpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/pacman.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/wrap-hwlib.hpp

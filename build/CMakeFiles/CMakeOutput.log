@@ -16,16 +16,16 @@ The CXX compiler identification is GNU, found in "/home/sebastiaan/projects/bmpt
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ccf5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8ccf5.dir/build.make CMakeFiles/cmTC_8ccf5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_522b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_522b1.dir/build.make CMakeFiles/cmTC_522b1.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8ccf5.dir/CMakeCXXCompilerABI.cpp.obj
-/usr/bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_8ccf5.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX static library libcmTC_8ccf5.a
-/usr/bin/cmake -P CMakeFiles/cmTC_8ccf5.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ccf5.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_8ccf5.a  CMakeFiles/cmTC_8ccf5.dir/CMakeCXXCompilerABI.cpp.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_8ccf5.a
+Building CXX object CMakeFiles/cmTC_522b1.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_522b1.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX static library libcmTC_522b1.a
+/usr/bin/cmake -P CMakeFiles/cmTC_522b1.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_522b1.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_522b1.a  CMakeFiles/cmTC_522b1.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_522b1.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -33,16 +33,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8ccf5/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8ccf5.dir/build.make CMakeFiles/cmTC_8ccf5.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_522b1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_522b1.dir/build.make CMakeFiles/cmTC_522b1.dir/build]
   ignore line: [make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_8ccf5.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/usr/bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_8ccf5.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX static library libcmTC_8ccf5.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_8ccf5.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ccf5.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/arm-none-eabi-ar qc libcmTC_8ccf5.a  CMakeFiles/cmTC_8ccf5.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_8ccf5.a]
+  ignore line: [Building CXX object CMakeFiles/cmTC_522b1.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_522b1.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX static library libcmTC_522b1.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_522b1.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_522b1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/arm-none-eabi-ar qc libcmTC_522b1.a  CMakeFiles/cmTC_522b1.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_522b1.a]
   ignore line: [make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -55,16 +55,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_43c80/fast"
-/usr/bin/make -f CMakeFiles/cmTC_43c80.dir/build.make CMakeFiles/cmTC_43c80.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f1bfb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1bfb.dir/build.make CMakeFiles/cmTC_f1bfb.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_43c80.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_43c80.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_43c80.a
-/usr/bin/cmake -P CMakeFiles/cmTC_43c80.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43c80.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_43c80.a  CMakeFiles/cmTC_43c80.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_43c80.a
+Building CXX object CMakeFiles/cmTC_f1bfb.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_f1bfb.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_f1bfb.a
+/usr/bin/cmake -P CMakeFiles/cmTC_f1bfb.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1bfb.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_f1bfb.a  CMakeFiles/cmTC_f1bfb.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_f1bfb.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -130,16 +130,16 @@ make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c6e0f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c6e0f.dir/build.make CMakeFiles/cmTC_c6e0f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b7dc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7dc8.dir/build.make CMakeFiles/cmTC_b7dc8.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c6e0f.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_c6e0f.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_c6e0f.a
-/usr/bin/cmake -P CMakeFiles/cmTC_c6e0f.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6e0f.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_c6e0f.a  CMakeFiles/cmTC_c6e0f.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_c6e0f.a
+Building CXX object CMakeFiles/cmTC_b7dc8.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_b7dc8.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_b7dc8.a
+/usr/bin/cmake -P CMakeFiles/cmTC_b7dc8.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7dc8.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_b7dc8.a  CMakeFiles/cmTC_b7dc8.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_b7dc8.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -205,16 +205,16 @@ make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6fc46/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6fc46.dir/build.make CMakeFiles/cmTC_6fc46.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_41b74/fast"
+/usr/bin/make -f CMakeFiles/cmTC_41b74.dir/build.make CMakeFiles/cmTC_41b74.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6fc46.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_6fc46.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_6fc46.a
-/usr/bin/cmake -P CMakeFiles/cmTC_6fc46.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fc46.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_6fc46.a  CMakeFiles/cmTC_6fc46.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_6fc46.a
+Building CXX object CMakeFiles/cmTC_41b74.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_41b74.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_41b74.a
+/usr/bin/cmake -P CMakeFiles/cmTC_41b74.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41b74.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_41b74.a  CMakeFiles/cmTC_41b74.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_41b74.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -280,16 +280,16 @@ make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6b106/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6b106.dir/build.make CMakeFiles/cmTC_6b106.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_26549/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26549.dir/build.make CMakeFiles/cmTC_26549.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6b106.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_6b106.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_6b106.a
-/usr/bin/cmake -P CMakeFiles/cmTC_6b106.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b106.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_6b106.a  CMakeFiles/cmTC_6b106.dir/feature_tests.cxx.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_6b106.a
+Building CXX object CMakeFiles/cmTC_26549.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_26549.dir/feature_tests.cxx.obj -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_26549.a
+/usr/bin/cmake -P CMakeFiles/cmTC_26549.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26549.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_26549.a  CMakeFiles/cmTC_26549.dir/feature_tests.cxx.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_26549.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -372,16 +372,16 @@ The C compiler identification is GNU, found in "/home/sebastiaan/projects/bmptkp
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9e51e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9e51e.dir/build.make CMakeFiles/cmTC_9e51e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ef8b3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef8b3.dir/build.make CMakeFiles/cmTC_ef8b3.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9e51e.dir/CMakeCCompilerABI.c.obj
-/usr/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_9e51e.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C static library libcmTC_9e51e.a
-/usr/bin/cmake -P CMakeFiles/cmTC_9e51e.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e51e.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_9e51e.a  CMakeFiles/cmTC_9e51e.dir/CMakeCCompilerABI.c.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_9e51e.a
+Building C object CMakeFiles/cmTC_ef8b3.dir/CMakeCCompilerABI.c.obj
+/usr/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_ef8b3.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C static library libcmTC_ef8b3.a
+/usr/bin/cmake -P CMakeFiles/cmTC_ef8b3.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef8b3.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_ef8b3.a  CMakeFiles/cmTC_ef8b3.dir/CMakeCCompilerABI.c.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_ef8b3.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -389,16 +389,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9e51e/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9e51e.dir/build.make CMakeFiles/cmTC_9e51e.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ef8b3/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ef8b3.dir/build.make CMakeFiles/cmTC_ef8b3.dir/build]
   ignore line: [make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_9e51e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/usr/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_9e51e.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C static library libcmTC_9e51e.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_9e51e.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e51e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/arm-none-eabi-ar qc libcmTC_9e51e.a  CMakeFiles/cmTC_9e51e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_9e51e.a]
+  ignore line: [Building C object CMakeFiles/cmTC_ef8b3.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_ef8b3.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C static library libcmTC_ef8b3.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_ef8b3.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef8b3.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/arm-none-eabi-ar qc libcmTC_ef8b3.a  CMakeFiles/cmTC_ef8b3.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/arm-none-eabi-ranlib libcmTC_ef8b3.a]
   ignore line: [make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -411,16 +411,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b70bb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b70bb.dir/build.make CMakeFiles/cmTC_b70bb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a82e7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a82e7.dir/build.make CMakeFiles/cmTC_a82e7.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b70bb.dir/feature_tests.c.obj
-/usr/bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_b70bb.dir/feature_tests.c.obj   -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_b70bb.a
-/usr/bin/cmake -P CMakeFiles/cmTC_b70bb.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b70bb.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_b70bb.a  CMakeFiles/cmTC_b70bb.dir/feature_tests.c.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_b70bb.a
+Building C object CMakeFiles/cmTC_a82e7.dir/feature_tests.c.obj
+/usr/bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_a82e7.dir/feature_tests.c.obj   -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_a82e7.a
+/usr/bin/cmake -P CMakeFiles/cmTC_a82e7.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a82e7.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_a82e7.a  CMakeFiles/cmTC_a82e7.dir/feature_tests.c.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_a82e7.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -433,16 +433,16 @@ make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a1511/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a1511.dir/build.make CMakeFiles/cmTC_a1511.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b5555/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5555.dir/build.make CMakeFiles/cmTC_b5555.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a1511.dir/feature_tests.c.obj
-/usr/bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_a1511.dir/feature_tests.c.obj   -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_a1511.a
-/usr/bin/cmake -P CMakeFiles/cmTC_a1511.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1511.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_a1511.a  CMakeFiles/cmTC_a1511.dir/feature_tests.c.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_a1511.a
+Building C object CMakeFiles/cmTC_b5555.dir/feature_tests.c.obj
+/usr/bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_b5555.dir/feature_tests.c.obj   -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_b5555.a
+/usr/bin/cmake -P CMakeFiles/cmTC_b5555.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5555.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_b5555.a  CMakeFiles/cmTC_b5555.dir/feature_tests.c.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_b5555.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
@@ -455,16 +455,16 @@ make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8bfad/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8bfad.dir/build.make CMakeFiles/cmTC_8bfad.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ae132/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae132.dir/build.make CMakeFiles/cmTC_ae132.dir/build
 make[1]: Entering directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8bfad.dir/feature_tests.c.obj
-/usr/bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_8bfad.dir/feature_tests.c.obj   -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_8bfad.a
-/usr/bin/cmake -P CMakeFiles/cmTC_8bfad.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bfad.dir/link.txt --verbose=1
-/usr/bin/arm-none-eabi-ar qc libcmTC_8bfad.a  CMakeFiles/cmTC_8bfad.dir/feature_tests.c.obj
-/usr/bin/arm-none-eabi-ranlib libcmTC_8bfad.a
+Building C object CMakeFiles/cmTC_ae132.dir/feature_tests.c.obj
+/usr/bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_ae132.dir/feature_tests.c.obj   -c /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_ae132.a
+/usr/bin/cmake -P CMakeFiles/cmTC_ae132.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae132.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-ar qc libcmTC_ae132.a  CMakeFiles/cmTC_ae132.dir/feature_tests.c.obj
+/usr/bin/arm-none-eabi-ranlib libcmTC_ae132.a
 make[1]: Leaving directory '/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/build/CMakeFiles/CMakeTmp'
 
 
