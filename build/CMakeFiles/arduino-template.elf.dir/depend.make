@@ -108,6 +108,7 @@ CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/shapes/cir
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/shapes/line.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/vector.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/game-lib/wrap-hwlib.hpp
+CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/hwlib-integration/hwlib-common-device-interface.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/hwlib-integration/virtual-pin-in.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/implementations/playstation/playstation-button-masks.hpp
 CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj: ../src/inputlib/implementations/playstation/playstation-byte-mapping.hpp

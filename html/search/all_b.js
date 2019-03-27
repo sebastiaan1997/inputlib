@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['tick',['tick',['../classgamelib_1_1_game_object.html#a2ae1c027bdec0db137031532f969633f',1,'gamelib::GameObject::tick()'],['../classinputlib_1_1_ps2_bus.html#ade349d7ea8427419acb8d4e1c0c5ffbb',1,'inputlib::Ps2Bus::tick()']]],
-  ['tickimplementation',['tickImplementation',['../classgamelib_1_1_game_object.html#acd9ebc8a41e1753ef371cddc7883594a',1,'gamelib::GameObject::tickImplementation()'],['../class_pacman.html#a4ed5a9630d4779f50eea56a89341933e',1,'Pacman::tickImplementation()']]],
-  ['transfer_5fbyte',['transfer_byte',['../classinputlib_1_1_ps2_bus.html#aaa68cefe1aacc6ca00c25c5eb6de5c3d',1,'inputlib::Ps2Bus']]],
-  ['trygetchangedinput',['tryGetChangedInput',['../classinputlib_1_1_i_input_device.html#a196b26c53a4f59c35a84082409694931',1,'inputlib::IInputDevice::tryGetChangedInput(uint_fast16_t &amp;button, BUTTON_TYPES &amp;buttonValue)'],['../classinputlib_1_1_i_input_device.html#aa0e0fa88138a282c2daa266c48232e52',1,'inputlib::IInputDevice::tryGetChangedInput(CommonInputValue &amp;value)']]]
+  ['setactive',['setActive',['../classgamelib_1_1_drawable.html#a0d1337a950f5442a6169a38714648387',1,'gamelib::Drawable']]],
+  ['setbordercolor',['setBorderColor',['../classgamelib_1_1_drawable.html#a6de712b47668a997177d33953e815c1c',1,'gamelib::Drawable']]],
+  ['setdirection',['setDirection',['../classgamelib_1_1_game_object.html#af496693c9f7b1551a8f3ac8c0bf64044',1,'gamelib::GameObject']]],
+  ['setinnercolor',['setInnerColor',['../classgamelib_1_1_drawable.html#a1baeea08a59b86a69d5789556ae239e2',1,'gamelib::Drawable']]],
+  ['setsize',['setSize',['../classgamelib_1_1_drawable.html#a34a26199a765348c4142edb60d241d95',1,'gamelib::Drawable']]],
+  ['stop',['stop',['../classgamelib_1_1_game_object.html#a90d2554b680c44e228531d0fbf5c38fb',1,'gamelib::GameObject']]]
 ];

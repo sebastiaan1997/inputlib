@@ -1,3 +1,9 @@
+//          Copyright Sebastiaan Saarloos 2018.
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          https://www.boost.org/LICENSE_1_0.txt)
+
+
 #ifndef GAMELIB_DRAWABLE_HPP
 #define GAMELIB_DRAWABLE_HPP
 #include "vector.hpp"
@@ -103,7 +109,7 @@ namespace gamelib{
          * 
          * @param target The window target to draw to
          */
-        void draw(hwlib::window& target) {
+        void draw(hwlib::window& target, hwlib::buffering buff = hwlib::buffering::unbuffered) {
             // If the window is not active, it will not be drawn
             if(!this->_active) {
                 return;
@@ -124,7 +130,7 @@ namespace gamelib{
          * 
          * @param target The window target to draw to
          */
-        virtual void drawImplementation(hwlib::window& target) = 0;
+        virtual void drawImplementation(hwlib::window& target, hwlib::buffering buff = hwlib::buffering::unbuffered) = 0;
         
     private:
 

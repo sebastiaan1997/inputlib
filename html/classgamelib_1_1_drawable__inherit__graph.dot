@@ -8,9 +8,11 @@ digraph "gamelib::Drawable"
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="gamelib::GameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgamelib_1_1_game_object.html",tooltip="The base object for all object used with the gamelib game library. "];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="gamelib::Rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgamelib_1_1_rectangle.html"];
+  Node3 [label="Candy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_candy.html"];
   Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="Pacman",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pacman.html"];
-  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="gamelib::Line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgamelib_1_1_line.html"];
+  Node4 [label="gamelib::Rectangle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgamelib_1_1_rectangle.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Pacman",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pacman.html"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="gamelib::Line",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgamelib_1_1_line.html"];
 }

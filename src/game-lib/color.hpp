@@ -1,3 +1,9 @@
+//          Copyright Sebastiaan Saarloos 2018.
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          https://www.boost.org/LICENSE_1_0.txt)
+
+
 #ifndef GAMELIB_COLOR_HPP
 #define GAMELIB_COLOR_HPP
 
@@ -5,7 +11,14 @@
 
 
 namespace gamelib {
-    class Color {
+    /**
+     * @brief Color object
+     * 
+     * @details
+     * A wrapper around a uint_fast32_t
+     * 
+     */
+class Color{
     public:
         /**
          * @brief Default constrctor, initializes with 0x00'00'00'00

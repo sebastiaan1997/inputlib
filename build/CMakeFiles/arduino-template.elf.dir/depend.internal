@@ -109,6 +109,7 @@ CMakeFiles/arduino-template.elf.dir/src/main.cpp.obj
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/shapes/line.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/vector.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/game-lib/wrap-hwlib.hpp
+ /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/hwlib-common-device-interface.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/virtual-pin-in.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/implementations/playstation/playstation-button-masks.hpp
  /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/implementations/playstation/playstation-byte-mapping.hpp

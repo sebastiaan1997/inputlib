@@ -130,6 +130,12 @@ array
 hwlib.hpp
 -
 
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/hwlib-common-device-interface.hpp
+../wrap-hwlib.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/wrap-hwlib.hpp
+virtual-pin-in.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/virtual-pin-in.hpp
+
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/virtual-pin-in.hpp
 ../wrap-hwlib.hpp
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/wrap-hwlib.hpp
@@ -151,6 +157,8 @@ cstdint
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/ps2_bus.hpp
 ../../hwlib-integration/virtual-pin-in.hpp
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/virtual-pin-in.hpp
+../../hwlib-integration/hwlib-common-device-interface.hpp
+/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/hwlib-integration/hwlib-common-device-interface.hpp
 playstation-byte-mapping.hpp
 /home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/src/inputlib/implementations/playstation/playstation-byte-mapping.hpp
 array

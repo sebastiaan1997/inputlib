@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['setactive',['setActive',['../classgamelib_1_1_drawable.html#a0d1337a950f5442a6169a38714648387',1,'gamelib::Drawable']]],
-  ['setbordercolor',['setBorderColor',['../classgamelib_1_1_drawable.html#a6de712b47668a997177d33953e815c1c',1,'gamelib::Drawable']]],
-  ['setdirection',['setDirection',['../classgamelib_1_1_game_object.html#af496693c9f7b1551a8f3ac8c0bf64044',1,'gamelib::GameObject']]],
-  ['setinnercolor',['setInnerColor',['../classgamelib_1_1_drawable.html#a1baeea08a59b86a69d5789556ae239e2',1,'gamelib::Drawable']]],
-  ['setsize',['setSize',['../classgamelib_1_1_drawable.html#a34a26199a765348c4142edb60d241d95',1,'gamelib::Drawable']]]
+  ['red',['red',['../classgamelib_1_1_color.html#a95c52313afa1c5010898923f7c8fe2d3',1,'gamelib::Color::red() const noexcept'],['../classgamelib_1_1_color.html#a89ea805041eb1d037f8de92ec39c3766',1,'gamelib::Color::red(uint_fast8_t redValue) noexcept']]],
+  ['rendercontext',['RenderContext',['../classgamelib_1_1_render_context.html#a689462c3edd6764c4f9b27f580598460',1,'gamelib::RenderContext']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['draw',['draw',['../classgamelib_1_1_drawable.html#a8e55c7f487dbe94a22d20572add35d7e',1,'gamelib::Drawable']]],
-  ['drawimplementation',['drawImplementation',['../classgamelib_1_1_drawable.html#a1b3e6c23793bd43c0b603c7db074b8f1',1,'gamelib::Drawable::drawImplementation()'],['../classgamelib_1_1_circle.html#a1c1a6f8db6f6145de7d11f4b3cb995ee',1,'gamelib::Circle::drawImplementation()'],['../classgamelib_1_1_line.html#aeda72179d58a891debc2a5ba570e8e3a',1,'gamelib::Line::drawImplementation()'],['../class_pacman.html#affbdb8a1e3e3de03e64049dccd958de9',1,'Pacman::drawImplementation()']]]
+  ['color',['Color',['../classgamelib_1_1_color.html#a2344d7203eb5d48786834c38a3489307',1,'gamelib::Color::Color()'],['../classgamelib_1_1_color.html#a6b7f1ded6a0b19b11b91da9f7b5f1c09',1,'gamelib::Color::Color(const Color &amp;c)'],['../classgamelib_1_1_color.html#a4fa9f6428ce4dedede5a51d19f1a6544',1,'gamelib::Color::Color(uint_fast32_t value)'],['../classgamelib_1_1_color.html#a752cbced6b9de52f3f5fb2b86518d58e',1,'gamelib::Color::Color(uint_fast8_t red, uint_fast8_t green, uint_fast8_t blue, uint_fast8_t alpha=0x00)']]]
 ];

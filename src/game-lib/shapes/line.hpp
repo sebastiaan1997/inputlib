@@ -1,3 +1,9 @@
+//          Copyright Sebastiaan Saarloos 2018.
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          https://www.boost.org/LICENSE_1_0.txt)
+
+
 #ifndef GAMELIB_LINE_HPP
 #define GAMELIB_LINE_HPP
 
@@ -10,34 +16,34 @@ namespace gamelib {
     public:
         Line(Vector<unsigned int, 2> start, Vector<unsigned int, 2> end): Drawable(start, end) {}
     protected:
-        virtual void drawImplementation(hwlib::window& win) override {
+        virtual void drawImplementation(hwlib::window& win, hwlib::buffering buff = hwlib::buffering::unbuffered) override {
             auto start = this->getPosition();
             auto end = this->getSize();
             
             if(start[0] == end[0]){
-                return this->drawOnY(win);
+                return this->drawOnY(win, buff);
             }
             if(start[1] == end[1]){
-                return drawOnX(win);
+                return drawOnX(win, buff);
             }
             else {
-                return drawSlope(win);
+                return drawSlope(win, buff);
             }
         }
-        void drawOnY(hwlib::window& win) {
+        void drawOnY(hwlib::window& win, hwlib::buffering buff = hwlib::buffering::unbuffered) {
             auto x = this->getPosition()[0];
             for(auto y = this->getPosition()[1]; y < this->getSize()[1]; y++) {
                 win.write(hwlib::location(x, y), hwlib::buffering::buffered);
             }
         }
-        void drawOnX(hwlib::window& win){
+        void drawOnX(hwlib::window& win, hwlib::buffering buff = hwlib::buffering::unbuffered){
             auto y = this->getPosition()[1];
             for(auto x = this->getPosition()[0]; x < this->getSize()[0]; x++) {
                 win.write(hwlib::location(x, y), hwlib::buffering::buffered);
             }
         }
 
-        void drawSlope(hwlib::window& win){
+        void drawSlope(hwlib::window& win, hwlib::buffering buff = hwlib::buffering::unbuffered){
             auto start = this->getPosition();
             auto end   = this->getSize();
             auto startX = start[0];

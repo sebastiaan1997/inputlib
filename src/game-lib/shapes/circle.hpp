@@ -1,3 +1,9 @@
+//          Copyright Sebastiaan Saarloos 2018.
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          https://www.boost.org/LICENSE_1_0.txt)
+
+
 #ifndef GAMELIB_CIRCLE_HPP
 #define GAMELIB_CIRCLE_HPP
 
@@ -31,7 +37,7 @@ namespace gamelib {
          * 
          * @param target The screen to draw to
          */
-        virtual void drawImplementation(hwlib::window& target) override {
+        virtual void drawImplementation(hwlib::window& target, hwlib::buffering buff = hwlib::buffering::unbuffered) override {
             // Credits to Wikipedia (22 june 2018)
             // URL https://en.wikipedia.org/wiki/Midpoint_circle_algorithm
             auto radius = this->_radius;
@@ -45,14 +51,14 @@ namespace gamelib {
 
 
             while (x >= y) {
-                target.write({x0 + x, y0 + y});
-                target.write({x0 + y, y0 + x});
-                target.write({x0 - y, y0 + x});
-                target.write({x0 - x, y0 + y});
-                target.write({x0 - x, y0 - y});
-                target.write({x0 - y, y0 - x});
-                target.write({x0 + y, y0 - x});
-                target.write({x0 + x, y0 - y});
+                target.write({x0 + x, y0 + y}, hwlib::buffering::buffered);
+                target.write({x0 + y, y0 + x}, hwlib::buffering::buffered);
+                target.write({x0 - y, y0 + x}, hwlib::buffering::buffered);
+                target.write({x0 - x, y0 + y}, hwlib::buffering::buffered);
+                target.write({x0 - x, y0 - y}, hwlib::buffering::buffered);
+                target.write({x0 - y, y0 - x}, hwlib::buffering::buffered);
+                target.write({x0 + y, y0 - x}, hwlib::buffering::buffered);
+                target.write({x0 + x, y0 - y}, hwlib::buffering::buffered);
 
                 if (err <= 0) {
                     y++;
@@ -65,14 +71,30 @@ namespace gamelib {
                     dx += 2;
                     err += dx - (radius << 1);
                 }
+            }
+            if(buff == hwlib::buffering::unbuffered) {
+                target.flush();
+            }
         }
-    }
+
+        unsigned int getRadius() const noexcept {
+            return this->_radius;
+        }
+        void setRadius(unsigned int radius) noexcept {
+            this->_radius = radius;
+            this->setSize({radius * 2, radius * 2});
+        }
     private:
         /**
          * @brief The radius of the circle
          * 
          */
         unsigned int _radius;
+        /**
+         * @brief The location
+         * 
+         */
+        Vector<unsigned int, 2> _location;
     };
 }
 #endif

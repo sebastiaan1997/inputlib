@@ -1,3 +1,9 @@
+//          Copyright Sebastiaan Saarloos 2018.
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          https://www.boost.org/LICENSE_1_0.txt)
+
+
 #ifndef GAMELIB_GAME_OBJECT_HPP
 #define GAMELIB_GAME_OBJECT_HPP
 
@@ -21,7 +27,6 @@ namespace gamelib {
             _interectionEventChain(EventChain<ObjectEventData>()),
             _direction({0,0}) {}
 
-        
         /**
          * @brief Returns if the GameObject intersects with another GameObject
          * 
@@ -39,6 +44,14 @@ namespace gamelib {
             
             return this->intersectsImplementation(other);
         }
+        void interact(GameObject& other) {
+            if(!this->isActive() || !other.isActive()) {
+                return;
+            }
+            hwlib::cout << "Called" << hwlib::endl << hwlib::flush;
+            this->interactImplementation(other);
+
+        }
 
         /**
          * @brief Executes everything that must be done in the current tick.
@@ -55,16 +68,10 @@ namespace gamelib {
             Vector<unsigned int, 2> pos = this->getPosition();
             pos += this->_direction;
             this->setPosition(pos);
-            hwlib::cout << this->getPosition() << hwlib::endl;
-
-
             return (this->tickImplementation() && !this->_direction.isZero());
 
         }
 
-        void addIntersectListener(Listener<ObjectEventData>& listener){
-            this->_interectionEventChain += listener;
-        }
         /**
          * @brief Get the Direction object, the direction is the movement in pixels per tick
          * 
@@ -82,9 +89,12 @@ namespace gamelib {
         inline void setDirection(Vector<int, 2> value) noexcept {
             this->_direction = value;
         }
-
+        /**
+         * @brief Stops the movement of the object
+         * 
+         */
         inline void stop() {
-            this->setPosition({0,0});
+            this->setDirection({0,0});
         }
 
 
@@ -96,7 +106,26 @@ namespace gamelib {
          * @return true The object intersects with the other object
          * @return false The object does not interect with the other object
          */
-        virtual bool intersectsImplementation(const GameObject& other) const = 0;
+        virtual bool intersectsImplementation(const GameObject& other) const {
+            auto otherLocation      = other.getPosition();
+            auto ownLocation        = this->getPosition(); 
+            auto otherSize          = other.getSize();
+            auto ownSize            = this->getSize();
+            auto ownRightBottom     = ownLocation + ownSize;
+            auto otherCenter   = otherLocation + (otherSize/2);
+
+            if(otherCenter > ownLocation && otherCenter < ownRightBottom) {
+                return true;
+            }
+            return false;
+        }
+
+        /**
+         * @brief If the
+         * 
+         * @param other The object to interact with
+         */
+        virtual void interactImplementation(GameObject& other) {}
 
         /**
          * @brief Implementation of a tick cycle provided by the child
@@ -109,6 +138,7 @@ namespace gamelib {
     private: 
         EventChain<ObjectEventData> _interectionEventChain;
         Vector<int, 2> _direction;
+        
 
 
 

@@ -4,38 +4,82 @@
 
 #include "../wrap-hwlib.hpp"
 #include <cstdint> 
+#include <type_traits>
 
 namespace inputlib {
     /**
-     * @brief Virtual pin for use inside hwlib applications
+     * @brief Virtual pin that is linked to a value
      * 
+     * @details
+     * The virtual pin is created independently from the implementation of the target.
+     * It means that you can link to any numeric value available.
+     * Internally, if available it refreshes the port that the value is in. It shifts the bits 
+     * into the right places by the position property and returns the value at the given position in the datatype.
+     * 
+     * @tparam BUFFER_T The type of the value that the virtual pin is using, must be a numeric value type
      */
+    template<typename BUFFER_T>
     class VirtualPinIn: public hwlib::pin_in {
-        
+    static_assert(std::is_arithmetic<BUFFER_T>::value, "The BUFFER_T must be arithmetic");
+    static_assert(!std::is_reference<BUFFER_T>::value, "The BUFFER_T must be a value type, not a reference");
+    static_assert(!std::is_pointer<BUFFER_T>::value, "The BUFFER_T must be a value type, not a pointer");
     public:
+       
+        VirtualPinIn():
+            _target(nullptr), _position(0), _port(nullptr) {};
+
+
         /**
-         * @brief Construct a new Virtual Pin In object
+         * @brief Create a new instance of a VirtualPinIn without targeting a port
          * 
-         * @param i The location of the bit in the byte
-         * @param port The source port for the pin
+         * @param Target The target value that is used to get the value
+         * @param Position The position in the target value that is used to get the value
          */
-        VirtualPinIn(unsigned int i , hwlib::port_in& port):
-            _lastValue(false), _mask(0x01 << i), _port(port) {}
-            
-        virtual bool get(hwlib::buffering buff = hwlib::buffering::unbuffered) override {
-            uint_fast8_t  portValue = this->_port.get();
-            bool result = (portValue & this->_mask);
-            return result;
+        VirtualPinIn(BUFFER_T& target, unsigned int position):
+            _target(&target), _position(position), _port(nullptr) {};
+
+        VirtualPinIn(const VirtualPinIn<BUFFER_T>& copy): 
+            _target(copy._target), _position(copy._position), _port(copy._port) 
+            {};
+        
+        /**
+         * @brief Create a new instance of a VirtualPinIn and target a port
+         * 
+         * @param target The target value that is used to get the value
+         * @param position Position The position in the target value that is used to get the value
+         * @param port A pointer to the target port
+         */
+        VirtualPinIn(BUFFER_T& target, unsigned int position, hwlib::port_in* port):
+            _target(&target), _position(position), _port(port) {};
+
+        /**
+         * @brief Get the value of the virtual pin
+         * 
+         * @param buff Buffer type
+         * @return true The value at the virtual pin is true
+         * @return false The value at the virtual pin is false
+         */
+        virtual bool get(hwlib::buffering buff = hwlib::buffering::unbuffered) {
+            if(this->_port != nullptr && buff == hwlib::buffering::unbuffered) {
+                this->_port->refresh();
+            }
+            return ((*this->_target) >> this->_position) & 0x01;
+        }
+        /**
+         * @brief Refresh the value at the virtual pin
+         */
+        virtual void refresh() override {
+            if(this->_port == nullptr){
+                return;
+            }
+            this->_port->refresh();
         }
 
-        virtual void refresh() override {
-            this->_port.refresh();
-        }
-        
     private:
-        bool _lastValue;
-        unsigned int _mask;
-        hwlib::port_in& _port;
+        BUFFER_T* _target;
+        unsigned int _position;
+        hwlib::port_in* const _port;
+
     };
 }
 #endif

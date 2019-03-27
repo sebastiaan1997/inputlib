@@ -86,6 +86,10 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae3516c6af4a78fa12b495006e9f9496c"><td class="memItemLeft" align="right" valign="top"><a id="ae3516c6af4a78fa12b495006e9f9496c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#ae3516c6af4a78fa12b495006e9f9496c">Vector</a> ()</td></tr>
+<tr class="memdesc:ae3516c6af4a78fa12b495006e9f9496c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classgamelib_1_1_vector.html" title="Vector that can be used for mathematical operations. ">Vector</a> object. <br /></td></tr>
+<tr class="separator:ae3516c6af4a78fa12b495006e9f9496c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168ad3c9a02f22583e6974e85b365474"><td class="memItemLeft" align="right" valign="top"><a id="a168ad3c9a02f22583e6974e85b365474"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Vector</b> (std::initializer_list&lt; T &gt; items)</td></tr>
 <tr class="separator:a168ad3c9a02f22583e6974e85b365474"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,15 +131,34 @@ template&lt;typename RHS_T &gt; </td></tr>
 template&lt;typename RHS_T &gt; </td></tr>
 <tr class="memitem:aad94c819b3cf0dba891ba4d76ba91ddb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator/=</b> (const <a class="el" href="classgamelib_1_1_vector.html">Vector</a>&lt; RHS_T, SIZE &gt; rhs) noexcept</td></tr>
 <tr class="separator:aad94c819b3cf0dba891ba4d76ba91ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72db093dc7da392f47c9abe5ca68c685"><td class="memItemLeft" align="right" valign="top"><a id="a72db093dc7da392f47c9abe5ca68c685"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isZero</b> () const noexcept</td></tr>
+<tr class="memitem:ac71f52cad077cec0b06b029941adc27d"><td class="memTemplParams" colspan="2">template&lt;typename RHS_T &gt; </td></tr>
+<tr class="memitem:ac71f52cad077cec0b06b029941adc27d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#ac71f52cad077cec0b06b029941adc27d">operator&gt;</a> (const <a class="el" href="classgamelib_1_1_vector.html">Vector</a>&lt; RHS_T, SIZE &gt; rhs) const noexcept</td></tr>
+<tr class="memdesc:ac71f52cad077cec0b06b029941adc27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares 2 vectors, the numbers at the same indexes are compared.  <a href="#ac71f52cad077cec0b06b029941adc27d">More...</a><br /></td></tr>
+<tr class="separator:ac71f52cad077cec0b06b029941adc27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c3a54195b1c9ede3212df08ddb134d"><td class="memTemplParams" colspan="2"><a id="a26c3a54195b1c9ede3212df08ddb134d"></a>
+template&lt;typename RHS_T &gt; </td></tr>
+<tr class="memitem:a26c3a54195b1c9ede3212df08ddb134d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classgamelib_1_1_vector.html">Vector</a>&lt; RHS_T, SIZE &gt; rhs) const noexcept</td></tr>
+<tr class="separator:a26c3a54195b1c9ede3212df08ddb134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72db093dc7da392f47c9abe5ca68c685"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#a72db093dc7da392f47c9abe5ca68c685">isZero</a> () const noexcept</td></tr>
+<tr class="memdesc:a72db093dc7da392f47c9abe5ca68c685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all values in the vector are 0.  <a href="#a72db093dc7da392f47c9abe5ca68c685">More...</a><br /></td></tr>
 <tr class="separator:a72db093dc7da392f47c9abe5ca68c685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b69eabf5a4215879b0c2c4207753ccc"><td class="memItemLeft" align="right" valign="top"><a id="a1b69eabf5a4215879b0c2c4207753ccc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>any</b> (T target) const noexcept</td></tr>
-<tr class="separator:a1b69eabf5a4215879b0c2c4207753ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24b1728581d682c220d966903303b3bc"><td class="memItemLeft" align="right" valign="top"><a id="a24b1728581d682c220d966903303b3bc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>all</b> (T target) const noexcept</td></tr>
-<tr class="separator:a24b1728581d682c220d966903303b3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2697217a05dbbce32913ef0bbcf9b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#abb2697217a05dbbce32913ef0bbcf9b5">isPositive</a> () const noexcept</td></tr>
+<tr class="memdesc:abb2697217a05dbbce32913ef0bbcf9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all values in the vetor are positive (&gt; 0)  <a href="#abb2697217a05dbbce32913ef0bbcf9b5">More...</a><br /></td></tr>
+<tr class="separator:abb2697217a05dbbce32913ef0bbcf9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda99b2e3618f3d5814b307dba37e803"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#abda99b2e3618f3d5814b307dba37e803">isNegative</a> () const noexcept</td></tr>
+<tr class="memdesc:abda99b2e3618f3d5814b307dba37e803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all values in the vetor are negative (&lt; 0)  <a href="#abda99b2e3618f3d5814b307dba37e803">More...</a><br /></td></tr>
+<tr class="separator:abda99b2e3618f3d5814b307dba37e803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6061f61d72055f8ad7a9ec136a9c635"><td class="memTemplParams" colspan="2">template&lt;typename START_T , typename END_T &gt; </td></tr>
+<tr class="memitem:ad6061f61d72055f8ad7a9ec136a9c635"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#ad6061f61d72055f8ad7a9ec136a9c635">valuesInRange</a> (LEFT_T start, END_T end)</td></tr>
+<tr class="memdesc:ad6061f61d72055f8ad7a9ec136a9c635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all values of the vector are in the given range.  <a href="#ad6061f61d72055f8ad7a9ec136a9c635">More...</a><br /></td></tr>
+<tr class="separator:ad6061f61d72055f8ad7a9ec136a9c635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e322b72ebd3400a5fa6297988d7492"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#a75e322b72ebd3400a5fa6297988d7492">any</a> (const T &amp;target) const noexcept</td></tr>
+<tr class="memdesc:a75e322b72ebd3400a5fa6297988d7492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if any value inside the vector equals the target.  <a href="#a75e322b72ebd3400a5fa6297988d7492">More...</a><br /></td></tr>
+<tr class="separator:a75e322b72ebd3400a5fa6297988d7492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1e8fd0fbf34303f54796572464268f"><td class="memTemplParams" colspan="2">template&lt;typename TARGET_T &gt; </td></tr>
+<tr class="memitem:afd1e8fd0fbf34303f54796572464268f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classgamelib_1_1_vector.html#afd1e8fd0fbf34303f54796572464268f">all</a> (TARGET_T target) const noexcept</td></tr>
+<tr class="memdesc:afd1e8fd0fbf34303f54796572464268f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all values inside the vector are equal to the target.  <a href="#afd1e8fd0fbf34303f54796572464268f">More...</a><br /></td></tr>
+<tr class="separator:afd1e8fd0fbf34303f54796572464268f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9544a2c68f8bfe1bdfca9ba10a7bd17"><td class="memItemLeft" align="right" valign="top"><a id="ab9544a2c68f8bfe1bdfca9ba10a7bd17"></a>
 T&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (unsigned int index)</td></tr>
 <tr class="separator:ab9544a2c68f8bfe1bdfca9ba10a7bd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,7 +187,296 @@ class gamelib::Vector&lt; T, SIZE &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afd1e8fd0fbf34303f54796572464268f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1e8fd0fbf34303f54796572464268f">&#9670;&nbsp;</a></span>all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<div class="memtemplate">
+template&lt;typename TARGET_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::all </td>
+          <td>(</td>
+          <td class="paramtype">TARGET_T&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if all values inside the vector are equal to the target. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TARGET_T</td><td>The type of the target </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
+<a id="a75e322b72ebd3400a5fa6297988d7492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75e322b72ebd3400a5fa6297988d7492">&#9670;&nbsp;</a></span>any()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::any </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>target</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if any value inside the vector equals the target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The target to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true The given target is present in the vector </dd>
+<dd>
+false The given target is not present in the vector </dd></dl>
+
+</div>
+</div>
+<a id="abda99b2e3618f3d5814b307dba37e803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda99b2e3618f3d5814b307dba37e803">&#9670;&nbsp;</a></span>isNegative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::isNegative </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if all values in the vetor are negative (&lt; 0) </p>
+<dl class="section return"><dt>Returns</dt><dd>true All values inside the vector are smaller than 0 (negative) </dd>
+<dd>
+false Not all, none of the values inside the vector are greather than 0 (negative) </dd></dl>
+
+</div>
+</div>
+<a id="abb2697217a05dbbce32913ef0bbcf9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2697217a05dbbce32913ef0bbcf9b5">&#9670;&nbsp;</a></span>isPositive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::isPositive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if all values in the vetor are positive (&gt; 0) </p>
+<dl class="section return"><dt>Returns</dt><dd>true All values inside the vector are greather than 0 (positive) </dd>
+<dd>
+false Not all, none of the values inside the vector are greather than 0 (positive) </dd></dl>
+
+</div>
+</div>
+<a id="a72db093dc7da392f47c9abe5ca68c685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72db093dc7da392f47c9abe5ca68c685">&#9670;&nbsp;</a></span>isZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::isZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if all values in the vector are 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>true All values in the vector are 0 </dd>
+<dd>
+false Not all/ none of the values in the vector are 0 </dd></dl>
+
+</div>
+</div>
+<a id="ac71f52cad077cec0b06b029941adc27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71f52cad077cec0b06b029941adc27d">&#9670;&nbsp;</a></span>operator>()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<div class="memtemplate">
+template&lt;typename RHS_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgamelib_1_1_vector.html">Vector</a>&lt; RHS_T, SIZE &gt;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares 2 vectors, the numbers at the same indexes are compared. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RHS_T</td><td>The type of the right hand side </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>The right hand side </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true All the values at the same position of the vector at the right are greather than their equivalent at the left side </dd>
+<dd>
+false Not all / no values at the same position in the vector at the right side are greather than at the left side </dd></dl>
+
+</div>
+</div>
+<a id="ad6061f61d72055f8ad7a9ec136a9c635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6061f61d72055f8ad7a9ec136a9c635">&#9670;&nbsp;</a></span>valuesInRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, unsigned int SIZE&gt; </div>
+<div class="memtemplate">
+template&lt;typename START_T , typename END_T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classgamelib_1_1_vector.html">gamelib::Vector</a>&lt; T, SIZE &gt;::valuesInRange </td>
+          <td>(</td>
+          <td class="paramtype">LEFT_T&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">END_T&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if all values of the vector are in the given range. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">START_T</td><td>The type of the start value </td></tr>
+    <tr><td class="paramname">END_T</td><td>The type of the end value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>The value of the start of the range to check </td></tr>
+    <tr><td class="paramname">end</td><td>The value of the end of the range to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true All the values in the vector are in the given range </dd>
+<dd>
+false Not all values are in the range of the vector </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="aab9c7130052eee7293169ba2b6c9308a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab9c7130052eee7293169ba2b6c9308a">&#9670;&nbsp;</a></span>operator<<</h2>
 
