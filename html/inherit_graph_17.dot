@@ -1,9 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node11 [label="pin_in",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node11 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node0 [label="inputlib::VirtualPinIn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classinputlib_1_1_virtual_pin_in.html",tooltip="Virtual pin for use inside hwlib applications. "];
-}

@@ -1,6 +1,0 @@
-build_test 6 0.00911502
-unit_test 0 0
-complexity_test 0 0
-clangformat_test 0 0
----
-unit_test

@@ -1,6 +1,0 @@
-/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/CMakeFiles/arduino-template.hex.dir
-/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/CMakeFiles/arduino-template.elf.dir
-/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/CMakeFiles/flash.dir
-/home/sebastiaan/projects/bmptkpp/Build-environment/modules/INPUTLIB/cmake-build-debug/CMakeFiles/arduino-template.bin.dir
